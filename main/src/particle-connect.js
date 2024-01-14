@@ -15,7 +15,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Web3 from 'web3';
 import {ParticleConnectProvider} from 'react-native-particle-connect';
 import {PROJECT_ID, CLIENT_KEY} from '@env';
-import { Env } from 'react-native-particle-auth';
+import {Env} from 'react-native-particle-auth';
 
 var DeviceInfo = require('react-native-device-info');
 
@@ -41,7 +41,7 @@ setChainInfo = async () => {
 
 connect = async ({walleType}) => {
   console.log('Connect:', walleType);
-  try{
+  try {
     // console.log(particleConnect);
     // particleConnect.init(
     //   Polygon,
@@ -76,7 +76,7 @@ connect = async ({walleType}) => {
       const error = result.data;
       console.log('Error:', error);
     }
-  }catch(e){
+  } catch (e) {
     console.log(e);
   }
 };
@@ -121,14 +121,9 @@ onClickConnect = async ({navigation, walletype}) => {
     solana_url: null,
   };
 
-  console.log("111111");
-  try{
-    particleConnect.init(
-      Polygon,
-      Env.Production,
-      metadata,
-      rpcUrl,
-    );
+  console.log('111111');
+  try {
+    particleConnect.init(Polygon, Env.Production, metadata, rpcUrl);
     global.walletType = walletype;
     navigation.navigate('Loading');
     console.log('onClick:', walletype);
@@ -178,8 +173,7 @@ onClickConnect = async ({navigation, walletype}) => {
     } else {
       navigation.navigate('Error');
     }
-  
-  }catch (e) {
+  } catch (e) {
     console.log(e);
   }
 };

@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
 
   marketText: {
     color: 'grey',
-    fontFamily: `Sarala-Regular`,
+    fontFamily: 'Sarala-Regular',
     textAlign: 'center',
     fontSize: 15,
   },
@@ -106,20 +106,20 @@ const styles = StyleSheet.create({
 
   subText: {
     color: '#868686',
-    fontFamily: `Sarala-Regular`,
+    fontFamily: 'Sarala-Regular',
     textAlign: 'left',
     fontSize: 15,
   },
 
   subBtc: {
     color: '#868686',
-    fontFamily: `Sarala-Regular`,
+    fontFamily: 'Sarala-Regular',
     textAlign: 'left',
     fontSize: 17.5,
   },
 
   subPrice: {
-    fontFamily: `Sarala-Bold`,
+    fontFamily: 'Sarala-Bold',
     textAlign: 'left',
     marginTop: 4,
     fontSize: 26,
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
   },
 
   subPriceBtc: {
-    fontFamily: `Sarala-Bold`,
+    fontFamily: 'Sarala-Bold',
     textAlign: 'left',
     marginTop: 0,
     fontSize: 24,
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
 
   leverageText: {
     color: '#FFF',
-    fontFamily: `Sarala-Regular`,
+    fontFamily: 'Sarala-Regular',
     fontSize: 23,
   },
 
@@ -263,7 +263,7 @@ const styles = StyleSheet.create({
 
   stockHead: {
     color: '#F0F0F0',
-    fontFamily: `Sarala-Regular`,
+    fontFamily: 'Sarala-Regular',
     fontSize: 16,
   },
 
@@ -276,7 +276,7 @@ const styles = StyleSheet.create({
   stockPrice: {
     color: '#F0F0F0',
     fontSize: 32,
-    fontFamily: `Sarala-Bold`,
+    fontFamily: 'Sarala-Bold',
     marginLeft: '5%',
   },
 
@@ -323,25 +323,25 @@ const styles = StyleSheet.create({
   },
 
   marketCapInfo: {
-    fontFamily: `Sarala-Regular`,
+    fontFamily: 'Sarala-Regular',
     color: '#999',
     fontSize: 15,
   },
 
   marketCapData: {
-    fontFamily: `Sarala-Regular`,
+    fontFamily: 'Sarala-Regular',
     color: '#FFFFFF',
     fontSize: 23,
   },
 
   highText: {
-    fontFamily: `Sarala-Regular`,
+    fontFamily: 'Sarala-Regular',
     color: '#2FBE6A',
     fontSize: 25,
   },
 
   lowText: {
-    fontFamily: `Sarala-Regular`,
+    fontFamily: 'Sarala-Regular',
     color: '#E14C4C',
     fontSize: 25,
   },
@@ -353,7 +353,7 @@ const styles = StyleSheet.create({
 
   portfolioText: {
     color: '#fff',
-    fontFamily: `Sarala-Regular`,
+    fontFamily: 'Sarala-Regular',
     fontSize: 30,
     marginLeft: '5%',
   },

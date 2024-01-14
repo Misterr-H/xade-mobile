@@ -114,7 +114,7 @@ const LoginCheck = async ({navigation, setLoadingText}) => {
                   ? account.phone
                   : account.googleEmail.toLowerCase();
 
-                console.log('Phone/Email:', email);
+                console.log('Phone/eeeeeEmail:', email);
 
                 console.log(account);
                 console.log("----------");
@@ -143,9 +143,9 @@ const LoginCheck = async ({navigation, setLoadingText}) => {
                     })
                     .then(data => {
                       console.log('SCW:', data);
-                      if (data == 0) {
-                        navigation.push('LoggedOutHome');
-                      }
+                      // if (data == 0) {
+                      //   navigation.push('LoggedOutHome');
+                      // }
                       scwAddress = data;
                     });
                 } else {
@@ -218,7 +218,7 @@ const LoginCheck = async ({navigation, setLoadingText}) => {
                 }catch(e){
                   console.log(e);
                 }
-        
+
 
                 console.log('Logged In:', global.loginAccount);
                 navigation.push('Payments');
@@ -245,7 +245,7 @@ const LoginCheck = async ({navigation, setLoadingText}) => {
           ? account.phone
           : account.googleEmail.toLowerCase();
 
-        console.log('Phone/Email:', email);
+        console.log('Phone/eeEmail:', email);
 
         const uuid = account.wallets[0].uuid;
 
@@ -530,7 +530,7 @@ const LoginCheck = async ({navigation, setLoadingText}) => {
                           }catch(e){
                             console.log(e);
                           }
-                  
+
                           navigation.push('Payments');
                           console.log('Navigating To Payments');
                         }
