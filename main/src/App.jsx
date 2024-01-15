@@ -597,12 +597,6 @@ export default function App({navigation}) {
     <NavigationContainer screenOptions={{animationEnabled: false}}>
       <Stack.Navigator screenOptions={{animation: 'none'}}>
         <Stack.Screen
-          name="Trade"
-          component={TradeScreen}
-          navigation={navigation}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen
           name="Home"
           component={PreLaunchLoad}
           options={{headerShown: false}}
@@ -803,6 +797,12 @@ export default function App({navigation}) {
         <Stack.Screen
           name="ReferralCode"
           component={ReferCode}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Trade"
+          component={TradeScreen}
+          navigation={navigation}
           options={{headerShown: false}}
         />
         <Stack.Screen
